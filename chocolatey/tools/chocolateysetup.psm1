@@ -11,6 +11,17 @@ function Request-ElevatedChocolateyPermissions
 
 Set-Alias sudo-chocolatey Request-ElevatedChocolateyPermissions;
 
+function Coalesce-Args {
+    $result = $null
+	$i = 0;
+	while($args[$i] -eq $null)
+	{
+		$i = $i + 1;
+	}
+
+	return $args[$i]
+}
+
 function Create-ChocolateyBinFile {
 param([string] $nugetChocolateyBinFile,[string] $nugetChocolateyInstallAlias)
 "@echo off
@@ -20,9 +31,10 @@ param([string] $nugetChocolateyBinFile,[string] $nugetChocolateyInstallAlias)
 }
 
 function Initialize-Chocolatey {
+param($nugetPath = 'C:\NuGet')
+
   #set up variables to add
   $statementTerminator = ";"
-  $nugetPath = 'C:\NuGet'
 	$nugetExePath = Join-Path $nuGetPath 'bin'
 	$nugetLibPath = Join-Path $nuGetPath 'lib'
 	$nugetChocolateyPath = Join-Path $nuGetPath 'chocolateyInstall'
@@ -51,7 +63,7 @@ Creating Chocolatey NuGet folders if they do not already exist.
 	$thisScriptFolder = Split-Path $thisScript.MyCommand.Path
 	$chocInstallFolder = Join-Path $thisScriptFolder "chocolateyInstall"
 	Write-Host 'Copying the contents of ' $chocInstallFolder ' to ' $nugetPath '.'
-	Copy-Item $chocInstallFolder $nugetPath –recurse -force
+	Copy-Item $chocInstallFolder $nugetPath ï¿½recurse -force
 	Write-Host 'Creating ' $nugetChocolateyBinFile ' so you can call chocolatey from anywhere.'
 	Create-ChocolateyBinFile $nugetChocolateyBinFile $nugetChocolateyInstallAlias
 	Write-Host ''
@@ -60,7 +72,7 @@ Creating Chocolatey NuGet folders if they do not already exist.
   #$envPath = $env:PATH
   $envPath = [Environment]::GetEnvironmentVariable('Path', [System.EnvironmentVariableTarget]::Machine)
 
-  #if you do not find C:\NuGet\bin, add it 
+  #if you do not find {$nugetPath}\bin, add it 
   if (!$envPath.ToLower().Contains($nugetExePath.ToLower()))
   {
   	Write-Host ''
