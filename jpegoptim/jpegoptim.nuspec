@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>jpegoptim</id>
-    <version>1.2.4</version>
+    <version>1.2.4.1</version>
     <title>JpegOptim</title>
     <authors>Timo Kokkonen,Pornel</authors>
     <owners>Anthony Mastrean</owners>
