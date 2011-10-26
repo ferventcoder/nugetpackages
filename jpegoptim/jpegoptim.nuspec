@@ -2,11 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>jpegoptim</id>
-    <version>1.2.4.1</version>
+    <version>1.2.4.2</version>
     <title>JpegOptim</title>
     <authors>Timo Kokkonen,Pornel</authors>
     <owners>Anthony Mastrean</owners>
     <projectUrl>http://pornel.net/jpegoptim</projectUrl>
+    <iconUrl>https://raw.github.com/AnthonyMastrean/nugetpackages/jpegoptim/jpegoptim/jpegoptim.gif</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Utility to optimize jpeg files. Provides lossless optimization (based on optimizing the Huffman tables) and "lossy" optimization based on setting maximum quality factor. | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <summary>Utility to optimize jpeg files. Provides lossless optimization (based on optimizing the Huffman tables) and "lossy" optimization based on setting maximum quality factor.</summary>
