@@ -3,18 +3,15 @@
   <metadata>
     <id>dependencywalker</id>
     <title>Dependency Walker</title>
-    <version>2.2.6000</version>
+    <version>2.2.6001</version>
     <authors>Steve Miller</authors>
-    <owners>Rob Reynolds, Anthony Mastrean</owners>
+    <owners>Anthony Mastrean</owners>
     <summary>Dependency Walker is a free utility that scans any 32-bit or 64-bit Windows module (exe, dll, ocx, sys, etc.) and builds a hierarchical tree diagram of all dependent modules.</summary>
     <description>Dependency Walker is a free utility that scans any 32-bit or 64-bit Windows module (exe, dll, ocx, sys, etc.) and builds a hierarchical tree diagram of all dependent modules. For each module found, it lists all the functions that are exported by that module, and which of those functions are actually being called by other modules. Another view displays the minimum set of required files, along with detailed information about each file including a full path to the file, base address, version numbers, machine type, debug information, and more. 
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://www.dependencywalker.com/</projectUrl>
     <tags>depends chocolatey admin</tags>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/dependencywalker/dependencywalker.gif</iconUrl>-->
-    <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
+    <iconUrl>https://github.com/AnthonyMastrean/nugetpackages/raw/depends/dependencywalker/dependencywalker.gif</iconUrl>
   </metadata>
 </package>
