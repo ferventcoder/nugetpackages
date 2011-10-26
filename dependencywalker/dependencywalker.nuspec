@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>dependencywalker</id>
+    <version>2.2.6000.1</version>
+    <title>Dependency Walker</title>
+    <authors>Steve Miller</authors>
+    <owners>Anthony Mastrean</owners>
+    <projectUrl>http://www.dependencywalker.com/</projectUrl>
+    <iconUrl>https://github.com/AnthonyMastrean/nugetpackages/raw/depends/dependencywalker/dependencywalker.gif</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Dependency Walker is a free utility that scans any 32-bit or 64-bit Windows module (exe, dll, ocx, sys, etc.) and builds a hierarchical tree diagram of all dependent modules. For each module found, it lists all the functions that are exported by that module, and which of those functions are actually being called by other modules. Another view displays the minimum set of required files, along with detailed information about each file including a full path to the file, base address, version numbers, machine type, debug information, and more. 
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <summary>Dependency Walker is a free utility that scans any 32-bit or 64-bit Windows module (exe, dll, ocx, sys, etc.) and builds a hierarchical tree diagram of all dependent modules.</summary>
+    <tags>depends chocolatey admin</tags>
+  </metadata>
+  <files>
+    <file src="content\dependencywalker.ReadMe.txt" target="content\dependencywalker.ReadMe.txt" />
+    <file src="tools\chocolateyInstall.ps1" target="tools\chocolateyInstall.ps1" />
+    <file src="tools\install.ps1" target="tools\install.ps1" />
+    <file src="dependencywalker.gif" target="dependencywalker.gif" />
+  </files>
+</package>
