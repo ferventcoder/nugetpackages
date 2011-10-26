@@ -6,7 +6,7 @@
     <title>JpegOptim</title>
     <authors>Timo Kokkonen,Pornel</authors>
     <owners>Anthony Mastrean</owners>
-    <projectUrl>http://pornel.net/about</projectUrl>
+    <projectUrl>http://pornel.net/jpegoptim</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Utility to optimize jpeg files. Provides lossless optimization (based on optimizing the Huffman tables) and "lossy" optimization based on setting maximum quality factor. | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <summary>Utility to optimize jpeg files. Provides lossless optimization (based on optimizing the Huffman tables) and "lossy" optimization based on setting maximum quality factor.</summary>
