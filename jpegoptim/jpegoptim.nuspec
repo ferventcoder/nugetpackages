@@ -1,15 +1,20 @@
 <?xml version="1.0"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>jpegoptim</id>
-    <title>JpegOptim</title>
     <version>1.2.4</version>
-    <authors>Timo Kokkonen, Pornel</authors>
+    <title>JpegOptim</title>
+    <authors>Timo Kokkonen,Pornel</authors>
     <owners>Anthony Mastrean</owners>
-    <summary>Utility to optimize jpeg files. Provides lossless optimization (based on optimizing the Huffman tables) and "lossy" optimization based on setting maximum quality factor.</summary>
-    <description>
-| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://pornel.net/about</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Utility to optimize jpeg files. Provides lossless optimization (based on optimizing the Huffman tables) and "lossy" optimization based on setting maximum quality factor. | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <summary>Utility to optimize jpeg files. Provides lossless optimization (based on optimizing the Huffman tables) and "lossy" optimization based on setting maximum quality factor.</summary>
     <tags>jpeg chocolatey admin</tags>
   </metadata>
+  <files>
+    <file src="content\jpegoptim.ReadMe.txt" target="content\jpegoptim.ReadMe.txt" />
+    <file src="tools\chocolateyInstall.ps1" target="tools\chocolateyInstall.ps1" />
+    <file src="tools\install.ps1" target="tools\install.ps1" />
+  </files>
 </package>
