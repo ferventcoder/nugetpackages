@@ -3,7 +3,7 @@
   <metadata>
     <id>WinPcap</id>
     <version>4.1.2</version>
-    <authors>zippy</authors>
+    <authors>NetGroup, CACE Technologies</authors>
     <owners>zippy1981 ferventcoder</owners>
     <licenseUrl>http://www.winpcap.org/misc/copyright.htm</licenseUrl>
     <projectUrl>http://www.winpcap.org/</projectUrl>
