@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>WinPcap</id>
+    <version>4.1.2</version>
+    <authors>zippy</authors>
+    <owners>zippy1981 ferventcoder</owners>
+    <licenseUrl>http://www.winpcap.org/misc/copyright.htm</licenseUrl>
+    <projectUrl>http://www.winpcap.org/</projectUrl>
+    <iconUrl>http://www.winpcap.org/favicon.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>WinPcap is the industry-standard tool for link-layer network access in Windows environments: it allows applications to capture and transmit network packets bypassing the protocol stack, and has additional useful features, including kernel-level packet filtering, a network statistics engine and support for remote packet capture.</description>
+    <releaseNotes>Bug fixing:
+  Fixed a bug reported by Boaz Brickner (http://pcapdotnet.codeplex.com/): the driver could cause an OS crash when an IRP_MJ_CLEANUP is processed in parallel with an IRP_MJ_READ/WRITE/DEVICECONTROL. The fix defers the deallocation of the open structure in IRP_MJ_CLOSE. 
+  Fixed a bug in the buffered write code. A malformed transmit buffer sent with pcap_sendqueue_transmit could cause a buffer overflow and crash the OS. 
+  Disabled tracing in the driver (it was left on by mistake in the previous release of WinPcap). 
+  Added the missing export pcap_free_datalinks.
+  Do not show the installation panel with the OS info.
+Small fix to the documentation regarding WDK.</releaseNotes>
+    <copyright>Copyright (c) 1999 - 2005 NetGroup, Politecnico di Torino (Italy).
+Copyright (c) 2005 - 2010 CACE Technologies, Davis (California).</copyright>
+    <tags>driver packetcapture network</tags>
+  </metadata>
+</package>
