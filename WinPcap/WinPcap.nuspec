@@ -19,6 +19,6 @@
 Small fix to the documentation regarding WDK.</releaseNotes>
     <copyright>Copyright (c) 1999 - 2005 NetGroup, Politecnico di Torino (Italy).
 Copyright (c) 2005 - 2010 CACE Technologies, Davis (California).</copyright>
-    <tags>driver packetcapture network</tags>
+    <tags>chocolatey driver packetcapture network</tags>
   </metadata>
 </package>
