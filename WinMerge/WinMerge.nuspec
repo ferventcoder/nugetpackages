@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>WinMerge</id>
+    <version>2.12.14</version>
+    <authors>Kimmo Varis, Denis Bradford, Dean Grimm, Laurent Ganier, Tim Gerundt, Perry Rapp</authors>
+    <owners>zippy1981 ferventcoder</owners>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <projectUrl>http://winmerge.org/</projectUrl>
+    <iconUrl>http://a.fsdn.com/con/icons/wi/winmerge@sf.net/winmerge.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>WinMerge is an Open Source differencing and merging tool for Windows. WinMerge can compare both folders and files, presenting differences in a visual text format that is easy to understand and handle.</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright 2004-2009</copyright>
+    <tags>chocolatey winmerge diff merge</tags>
+  </metadata>
+</package>
