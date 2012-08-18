@@ -3,10 +3,10 @@
   <metadata>
     <id>wireshark</id>
     <title>WireShark</title>
-    <version>1.8.1</version>
+    <version>1.8.2</version>
     <authors>Gerald Combs, WireShark team</authors>
     <owners>kujotx, WireShark team</owners>
-    <summary>wireshark-1.8.1</summary>
+    <summary>wireshark-1.8.2</summary>
     <description>Wireshark is the world's foremost network protocol analyzer. It lets you capture and interactively browse the traffic running on a computer network. It is the de facto (and often de jure) standard across many industries and educational institutions.
 
 Wireshark development thrives thanks to the contributions of networking experts across the globe. It is the continuation of a project that started in 1998. 
