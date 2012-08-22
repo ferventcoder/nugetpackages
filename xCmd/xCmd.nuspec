@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>xCmd</id>
+    <version>1.12.0</version>
+    <authors>Gerd Feldkirch</authors>
+    <owners>zippy1981 ferventcoder</owners>
+    <projectUrl>http://feldkir.ch/xcmd.htm</projectUrl>
+    <iconUrl>http://feldkir.ch/favicon.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>xCmd is a tool designed to execute applications on remote systems. You do not need to install any server software! It will self register as a service. The only requirement is you have to be the Administrator!</description>
+    <copyright>Copyright 2001-2012</copyright>
+    <tags>chocolatey xCmd</tags>
+  </metadata>
+</package>
