@@ -9,7 +9,18 @@ try {
     ### Using an environment variable to to define the bin root until we implement YAML configuration ###
     if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
     $poshgitPath = join-path $binRoot 'poshgit'
-    $poshGitInstall = if($env:poshGit -ne $null){ $env:poshGit } else {'https://github.com/dahlbyk/posh-git/zipball/v0.4'}
+    
+    try {
+      if (test-path($poshgitPath)) {
+        Write-Host "Attempting to remove existing `'$poshgitPath`' prior to install."
+        remove-item $poshgitPath -recurse -force
+      }
+    } catch {
+      Write-Host 'Could not remove poshgit folder'
+    }
+
+    $poshGitInstall = if($env:poshGit -ne $null){ $env:poshGit } else {'https://github.com/dahlbyk/posh-git/zipball/master'}
+    #Install-ChocolateyZipPackage 'poshgit' 'https://github.com/dahlbyk/posh-git/zipball/v0.4' $poshgitPath
     Install-ChocolateyZipPackage 'poshgit' $poshGitInstall $poshgitPath
     $pgitDir = [Array](Dir "$poshgitPath\*posh-git*\" | Sort-Object -Property LastWriteTime)[-1]
 
@@ -32,7 +43,10 @@ try {
 
 
     #------- ADDITIONAL SETUP -------#
-    $installer = (Get-Item "$pgitDir\install.ps1")
+    $subfolder = get-childitem $poshgitPath -recurse -include 'dahlbyk-posh-git-*' | select -First 1
+    write-debug "Found and using folder `'$subfolder`'"
+    #$installer = Join-Path $poshgitPath $subfolder #'dahlbyk-posh-git-60be436'
+    $installer = Join-Path $subfolder 'install.ps1'
     & $installer
 
     $newProfile = [string[]](Get-Content $PROFILE)
