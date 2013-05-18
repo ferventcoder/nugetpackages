@@ -12,6 +12,6 @@
     <projectUrl>http://www.slysoft.com/en/virtual-clonedrive.html</projectUrl>
     <tags>Virtual CloneDrive ISO Virtual Drive chocolatey admin</tags>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/VirtualCloneDrive/virtualclonedrive.gif</iconUrl>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/VirtualCloneDrive/virtualclonedrive.png</iconUrl>
   </metadata>
 </package>
