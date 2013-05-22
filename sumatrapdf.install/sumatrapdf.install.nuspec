@@ -3,9 +3,10 @@
   <metadata>
     <id>sumatrapdf.install</id>
     <title>Sumatra PDF (Install)</title>
-    <version>2.2</version>
+    <version>2.3</version>
     <authors>Krzysztof Kowalczyk</authors>
     <owners>Rob Reynolds</owners>
+	<iconUrl>https://raw.github.com/kjk/sumatrapdf/master/gfx/SumatraPDF-128x128x32.png</iconUrl>
     <summary>Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.</summary>
     <description>Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.
 

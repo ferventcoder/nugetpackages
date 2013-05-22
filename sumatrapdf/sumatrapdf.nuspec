@@ -3,9 +3,10 @@
   <metadata>
     <id>sumatrapdf</id>
     <title>Sumatra PDF</title>
-    <version>2.2</version>
+    <version>2.3</version>
     <authors>Krzysztof Kowalczyk</authors>
     <owners>Rob Reynolds</owners>
+	<iconUrl>https://raw.github.com/kjk/sumatrapdf/master/gfx/SumatraPDF-128x128x32.png</iconUrl>
     <summary>Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.</summary>
     <description>Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.
 
@@ -18,7 +19,7 @@ Simplicity of the user interface has a high priority</description>
     <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
-      <dependency id="sumatrapdf.commandline" version="[2.2]" />
+      <dependency id="sumatrapdf.commandline" version="[2.3]" />
     </dependencies>
     <releaseNotes></releaseNotes>
   </metadata>
