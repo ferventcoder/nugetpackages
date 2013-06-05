@@ -11,5 +11,6 @@
     <projectUrl>http://sqliteadmin.orbmu2k.de/</projectUrl>
     <tags>sqlite sqliteadmin chocolatey</tags>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<iconUrl>https://raw.github.com/ferventcoder/nugetpackages/master/sqlite.analyzer/sqlite.png</iconUrl>
   </metadata>
 </package>
