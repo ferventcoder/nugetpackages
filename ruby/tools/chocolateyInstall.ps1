@@ -10,8 +10,16 @@ try {
   #$rubyFolder = '192'
   #$url = 'http://rubyforge.org/frs/download.php/75127/rubyinstaller-1.9.2-p290.exe'
 
-  $rubyFolder = '193'
-  $url = 'http://cdn.rubyinstaller.org/archives/1.9.3-p374/rubyinstaller-1.9.3-p374.exe'
+  #$rubyFolder = '193'
+  #$url = 'http://cdn.rubyinstaller.org/archives/1.9.3-p374/rubyinstaller-1.9.3-p374.exe'
+
+  # choose 64-bit or 32-bit installer based on machine architecture
+  $arch = Get-WmiObject -Class Win32_OperatingSystem | Select-Object OSArchitecture
+  if ($arch.OSArchitecture -eq "64-bit") {
+    $url = 'http://files.rubyforge.vm.bytemark.co.uk/rubyinstaller/rubyinstaller-2.0.0-p195-x64.exe'
+  } else {
+    $url = 'http://cdn.rubyinstaller.org/archives/2.0.0-p195/rubyinstaller-2.0.0-p195.exe'
+  }
 
   $rubyPath = join-path $binRoot $('ruby' + "$rubyFolder")
   $silentArgs = "/verysilent /dir=`"$rubyPath`" /tasks=`"assocfiles,modpath`""
