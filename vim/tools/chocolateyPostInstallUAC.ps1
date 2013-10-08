@@ -3,13 +3,7 @@ $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 # Attention people from the future. This function will be built into chocolatey 0.9.8.21 or possibly 0.9.8.20
 . (Join-Path $scriptDir '.\Invoke-GenerateBinFile.ps1')
 
-$is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
-if ($is64bit) {
-      $installDir = Split-Path -Parent (Get-ItemProperty HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Vim UninstallString).UninstallString
-}
-else{
-      $installDir = Split-Path -Parent (Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Vim UninstallString).UninstallString
-    }
+$installDir = Split-Path -Parent (Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Vim 7.4" UninstallString).UninstallString
 
 $binDir = Join-Path (Split-Path -Parent $installDir) 'bin'
 
