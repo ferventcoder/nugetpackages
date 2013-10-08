@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>logstash</id>
+    <title>logstash</title>
+    <version>1.2.1.2013100803</version>
+    <authors>https://github.com/logstash/</authors>
+    <owners>http://chocolatey.org/profiles/kireevco</owners>
+    <summary>Logstash Agent package</summary>
+    <description>Logstash is a tool for managing events and logs. You can use it to collect logs, parse them, and store them for later use (like, for searching). Speaking of searching, logstash comes with a web interface for searching and drilling into all of your logs. This package installs logstash flat jar as an agent service via nssm. All you need to do - is to configure your logstash.conf and start logstash service.</description>    
+    <tags>logstash, logging</tags>    
+    <projectUrl>http://logstash.net/</projectUrl>
+    <iconUrl>http://logstash.net/images/logstash.png</iconUrl>
+	 <dependencies>    
+      <dependency id="javaruntime" version="7.0.0"/>   
+      <dependency id="NSSM" version="2.16.0"/>  
+	  <dependency id="Chocolatey" version="0.9.8.20" />
+	</dependencies>
+  </metadata> 
+</package>
