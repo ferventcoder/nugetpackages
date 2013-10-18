@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>wmisecurity</id>
+    <title>WMI Namespace Security</title>
+    <version>1.0.0</version>
+    <authors>J_Madden</authors>
+    <owners>http://chocolatey.org/profiles/kireevco</owners>
+    <summary>WMI Namespace Security utility</summary>
+    <description>WMI security is implemented by granting trustees permissions to WMI namespaces. A WMI namespace is a collection of logically grouped data and methods describing computer components or services. You can view WMI namespace security on the Windows platform by opening the WMI Control in the Computer Management console, and then expand "Services and Applications." Click "WMI Control" to highlight, then right click and choose "Properties."</description>    
+    <tags>WMI, cli, automation</tags>    
+    <projectUrl>http://www.codeproject.com/Articles/15848/WMI-Namespace-Security</projectUrl>
+	 <dependencies>      
+	  <dependency id="Chocolatey" version="0.9.8.20" />
+	</dependencies>
+  </metadata> 
+</package>
