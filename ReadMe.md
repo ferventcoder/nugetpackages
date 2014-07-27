@@ -12,20 +12,6 @@ These are packages that do not yet have a home elsewhere.
 NuGet - awesome package management tool  
   
 ----
-Chocolatey
-=================================
-  
-Now located at [chocolatey/chocolatey](https://github.com/chocolatey/chocolatey)
-  
-##Getting Started
-- Video: [Easy to use.](http://www.youtube.com/watch?v=N-hWOUL8roU).
-- Video: Now that you want it. [Find out how to create your own meta package](http://www.youtube.com/watch?v=Wt_unjS_SUo)
+## Chocolatey packages that used to live here are in process of being migrated to https://github.com/ferventcoder/chocolatey-packages
 
-##Mailing List
-[Chocolatey Google group](http://groups.google.com/group/chocolatey)  
-
-##LICENSE
-Apache 2.0  
-  
-##REQUIREMENTS
-* .NET Framework 4.0 
+Please file requests there.
