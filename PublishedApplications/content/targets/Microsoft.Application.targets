@@ -195,13 +195,14 @@ Copyright (C) 2005 Microsoft Corporation. All rights reserved.
           RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)"/>
 
     <!-- Copy items that have been marked to be copied to the bin folder -->
+    <!-- Honor the content from referenced assemblies-->
     <Copy SourceFiles="@(_SourceItemsToCopyToOutputDirectory)"
-          DestinationFolder="$(ExeProjectOutputDir)"
+          DestinationFiles="@(_SourceItemsToCopyToOutputDirectory -> '$(ExeProjectOutputDir)\%(TargetPath)')"          
           SkipUnchangedFiles="true"
           Retries="$(CopyRetryCount)"
           RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)"/>
     <Copy SourceFiles="@(_SourceItemsToCopyToOutputDirectoryAlways)"
-          DestinationFolder="$(ExeProjectOutputDir)"
+          DestinationFiles="@(_SourceItemsToCopyToOutputDirectoryAlways -> '$(ExeProjectOutputDir)\%(TargetPath)')"
           SkipUnchangedFiles="false"
           Retries="$(CopyRetryCount)"
           RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)"/>
