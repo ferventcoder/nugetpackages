@@ -27,6 +27,13 @@ Copyright (C) 2005 Microsoft Corporation. All rights reserved.
     <CleanExeProjectOutputDir Condition="$(ExeProjectOutputDirInsideProject)" >False</CleanExeProjectOutputDir>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(OutputType)'=='Exe'">
+    <AssemblyOutputExtension>exe</AssemblyOutputExtension>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(OutputType)'=='' Or '$(OutputType)'=='Library'">
+    <AssemblyOutputExtension>dll</AssemblyOutputExtension>
+  </PropertyGroup>
+
   <PropertyGroup>
     <PrepareForRunDependsOn>
       $(PrepareForRunDependsOn);
@@ -43,7 +50,7 @@ Copyright (C) 2005 Microsoft Corporation. All rights reserved.
   <!--***************************************************************-->
   <Target Name="CopyAndRenameAppConfig">
     <Copy SourceFiles="@(AppConfigWithTargetPath)"
-      DestinationFiles="@(AppConfigWithTargetPath->'$(ExeProjectOutputDir)\$(AssemblyName).exe%(Extension)')"
+      DestinationFiles="@(AppConfigWithTargetPath->'$(ExeProjectOutputDir)\$(AssemblyName).$(AssemblyOutputExtension)%(Extension)')"
       Retries="$(CopyRetryCount)"
       RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" 
       Condition="Exists('%(RootDir)%(Directory)%(Filename)%(Extension)')"
