@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'wireshark' 'EXE' '/S /quicklaunchicon=no' 'http://wiresharkdownloads.riverbed.com/wireshark/win32/Wireshark-win32-1.8.2.exe' 'http://wiresharkdownloads.riverbed.com/wireshark/win64/Wireshark-win64-1.8.2.exe'
